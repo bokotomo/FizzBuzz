@@ -6,7 +6,7 @@ void showFizzBuzz(int num){
   (num%15 == 0)?puts("FizzBuzz"):((num%3 == 0)?puts("Fizz"):((num%5 == 0)?puts("Buzz"):printf("%d\n",num)));
 }
 
-//三項演算子
+//if+三項演算子
 void showFizzBuzz2(int num){
   int i;
   for(i=1;i<=num;i++){
@@ -14,7 +14,7 @@ void showFizzBuzz2(int num){
   }
 }
 
-//if
+//if+for
 void showFizzBuzz3(int num){
   int i;
   for(i=1;i<=num;i++){
@@ -30,7 +30,7 @@ void showFizzBuzz3(int num){
   }
 }
 
-//switch
+//switch+for
 void showFizzBuzz4(int num){
   int i;
   for(i=1;i<=num;i++){
