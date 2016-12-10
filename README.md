@@ -10,7 +10,7 @@
 Fizz  
 4  
 Buzz  
-Fizzv
+Fizz  
 7  
 8  
 Fizz  

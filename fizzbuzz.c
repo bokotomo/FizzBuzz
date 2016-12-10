@@ -62,11 +62,28 @@ void showFizzBuzz4(int num){
   }
 }
 
+//for+if+nullcharacter
+void showFizzBuzz5(int num){
+  int i;
+  char *str = "Fizz\0Buzz\0FizzBuzz";
+  for(i=1;i<=num;i++){
+    if(i%15 == 0){
+      puts(&str[10]);
+    }else if(i%3 == 0){
+      puts(&str[0]);
+    }else if(i%5 == 0){
+      puts(&str[5]);
+    }else{
+      printf("%d\n",i);
+    }
+  }
+}
+
 int main(){
   int num;
   puts("整数を入力してください。");
   scanf("%d",&num);
   puts("----------");
-  showFizzBuzz(num);
+  showFizzBuzz5(num);
   return 0;
 }
